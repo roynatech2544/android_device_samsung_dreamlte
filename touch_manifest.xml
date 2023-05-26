@@ -1,5 +1,5 @@
 <manifest version="1.0" type="device" target-level="legacy">
-    <hal format="hidl">
+    <hal format="hidl" override="true">
         <name>vendor.lineage.touch</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -7,5 +7,9 @@
             <name>IGloveMode</name>
             <instance>default</instance>
         </interface>
+	<interface>
+	    <name>ITouchscreenGesture</name>
+	    <instance>default</instance>
+	</interface>
     </hal>
 </manifest>
